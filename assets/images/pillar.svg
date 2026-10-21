@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 500" width="100%" height="100%" fill="none">
+  <!-- Classical Architectural Pillar (TinkerHub Style) -->
+  <defs>
+    <linearGradient id="pillarGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#E2DFD8"/>
+      <stop offset="25%" stop-color="#FAF9F5"/>
+      <stop offset="60%" stop-color="#FFFFFF"/>
+      <stop offset="85%" stop-color="#E6E3DC"/>
+      <stop offset="100%" stop-color="#CBC7BD"/>
+    </linearGradient>
+    <linearGradient id="shadowGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#121316" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#121316" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Capital / Top Abacus -->
+  <rect x="15" y="10" width="130" height="14" rx="3" fill="url(#pillarGrad)" stroke="#121316" stroke-width="2.5"/>
+  <rect x="25" y="24" width="110" height="10" rx="2" fill="url(#pillarGrad)" stroke="#121316" stroke-width="2"/>
+  
+  <!-- Volute / Scrolls (Ionic Style) -->
+  <circle cx="28" cy="42" r="14" fill="url(#pillarGrad)" stroke="#121316" stroke-width="2.5"/>
+  <circle cx="28" cy="42" r="7" fill="#E2DFD8" stroke="#121316" stroke-width="1.8"/>
+  <circle cx="132" cy="42" r="14" fill="url(#pillarGrad)" stroke="#121316" stroke-width="2.5"/>
+  <circle cx="132" cy="42" r="7" fill="#E2DFD8" stroke="#121316" stroke-width="1.8"/>
+  <rect x="36" y="34" width="88" height="18" fill="url(#pillarGrad)" stroke="#121316" stroke-width="2"/>
+  <path d="M 28 50 Q 80 58 132 50" fill="none" stroke="#121316" stroke-width="2.5"/>
+
+  <!-- Necking & Astragal -->
+  <rect x="30" y="56" width="100" height="12" rx="2" fill="url(#pillarGrad)" stroke="#121316" stroke-width="2"/>
+
+  <!-- Main Fluted Column Shaft -->
+  <rect x="35" y="68" width="90" height="350" fill="url(#pillarGrad)" stroke="#121316" stroke-width="2.5"/>
+  
+  <!-- Flutes (Vertical Grooves with Chiaroscuro) -->
+  <g stroke="#121316" stroke-width="1.8" opacity="0.85">
+    <line x1="47" y1="72" x2="47" y2="414"/>
+    <line x1="59" y1="72" x2="59" y2="414"/>
+    <line x1="71" y1="72" x2="71" y2="414"/>
+    <line x1="80" y1="72" x2="80" y2="414"/>
+    <line x1="89" y1="72" x2="89" y2="414"/>
+    <line x1="101" y1="72" x2="101" y2="414"/>
+    <line x1="113" y1="72" x2="113" y2="414"/>
+  </g>
+  <!-- Shadow overlay for 3D depth -->
+  <rect x="35" y="68" width="22" height="350" fill="url(#shadowGrad)"/>
+
+  <!-- Base Molding (Torus & Plinth) -->
+  <rect x="30" y="418" width="100" height="14" rx="3" fill="url(#pillarGrad)" stroke="#121316" stroke-width="2"/>
+  <rect x="22" y="432" width="116" height="16" rx="2" fill="url(#pillarGrad)" stroke="#121316" stroke-width="2"/>
+  <rect x="15" y="448" width="130" height="24" rx="4" fill="url(#pillarGrad)" stroke="#121316" stroke-width="2.5"/>
+  <rect x="10" y="472" width="140" height="18" rx="2" fill="#D8D4CA" stroke="#121316" stroke-width="2.5"/>
+</svg>

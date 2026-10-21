@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%">
+  <rect width="600" height="360" fill="#E7F5FF"/>
+  <!-- Grid dots -->
+  <defs>
+    <pattern id="grid-filter" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.5" fill="#121316" opacity="0.15"/>
+    </pattern>
+  </defs>
+  <rect width="600" height="360" fill="url(#grid-filter)"/>
+  
+  <g transform="translate(60, 40)">
+    <!-- Shadow -->
+    <rect x="8" y="8" width="480" height="270" rx="12" fill="#121316"/>
+    <!-- Window Body -->
+    <rect x="0" y="0" width="480" height="270" rx="12" fill="#FFFFFF" stroke="#121316" stroke-width="3"/>
+    
+    <!-- Titlebar -->
+    <rect x="0" y="0" width="480" height="42" rx="12" fill="#70B8FF" stroke="#121316" stroke-width="3"/>
+    <rect x="0" y="30" width="480" height="12" fill="#70B8FF"/>
+    <line x1="0" y1="42" x2="480" y2="42" stroke="#121316" stroke-width="3"/>
+    
+    <!-- Window Buttons -->
+    <circle cx="22" cy="21" r="5" fill="#FF5F56" stroke="#121316" stroke-width="1.5"/>
+    <circle cx="38" cy="21" r="5" fill="#FFBD2E" stroke="#121316" stroke-width="1.5"/>
+    <circle cx="54" cy="21" r="5" fill="#27C93F" stroke="#121316" stroke-width="1.5"/>
+    <text x="240" y="26" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="13" text-anchor="middle" fill="#121316">POSTGRESQL AUTO-FILTER ENGINE</text>
+
+    <!-- Database Schema & Query Flow -->
+    <rect x="25" y="60" width="210" height="185" rx="8" fill="#FAF9F5" stroke="#121316" stroke-width="2"/>
+    <text x="40" y="86" font-family="'Space Mono', monospace" font-size="11" font-weight="700">🐘 POSTGRESQL CLUSTER</text>
+    <line x1="40" y1="94" x2="215" y2="94" stroke="#121316" stroke-width="1"/>
+    <text x="40" y="115" font-family="'Space Mono', monospace" font-size="10" fill="#4B5563">SELECT * FROM records</text>
+    <text x="40" y="132" font-family="'Space Mono', monospace" font-size="10" fill="#4B5563">WHERE query @@ tsquery</text>
+    <text x="40" y="149" font-family="'Space Mono', monospace" font-size="10" fill="#4B5563">ORDER BY rank DESC;</text>
+    
+    <rect x="40" y="175" width="180" height="45" rx="6" fill="#C3FF16" stroke="#121316" stroke-width="1.5"/>
+    <text x="130" y="195" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" text-anchor="middle">⚡ Query Time: 2.1ms</text>
+    <text x="130" y="210" font-family="'Space Mono', monospace" font-size="9" text-anchor="middle">500,000+ Indexed Records</text>
+
+    <!-- Query Pipeline -->
+    <rect x="255" y="60" width="200" height="185" rx="8" fill="#121316" stroke="#121316" stroke-width="2"/>
+    <text x="270" y="90" font-family="'Space Mono', monospace" font-size="11" fill="#FFE816">&gt; Index Type: GIN</text>
+    <text x="270" y="115" font-family="'Space Mono', monospace" font-size="11" fill="#97F8B7">&gt; Cache Hit: 99.8%</text>
+    <text x="270" y="140" font-family="'Space Mono', monospace" font-size="11" fill="#FFFFFF">&gt; Python Async Worker</text>
+    <text x="270" y="165" font-family="'Space Mono', monospace" font-size="11" fill="#70B8FF">&gt; Realtime Stream</text>
+    <rect x="270" y="185" width="170" height="30" rx="4" fill="#FEEDD2" stroke="#121316" stroke-width="1.2"/>
+    <text x="355" y="205" font-family="'Space Grotesk', sans-serif" font-size="10" font-weight="700" text-anchor="middle" fill="#121316">OPTIMIZED BACKEND</text>
+  </g>
+</svg>

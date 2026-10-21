@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%">
+  <rect width="600" height="360" fill="#F2E8FE"/>
+  <!-- Grid dots -->
+  <defs>
+    <pattern id="grid-ai" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.5" fill="#121316" opacity="0.15"/>
+    </pattern>
+  </defs>
+  <rect width="600" height="360" fill="url(#grid-ai)"/>
+  
+  <g transform="translate(60, 40)">
+    <!-- Shadow -->
+    <rect x="8" y="8" width="480" height="270" rx="12" fill="#121316"/>
+    <!-- Window Body -->
+    <rect x="0" y="0" width="480" height="270" rx="12" fill="#FFFFFF" stroke="#121316" stroke-width="3"/>
+    
+    <!-- Titlebar -->
+    <rect x="0" y="0" width="480" height="42" rx="12" fill="#C7AEE8" stroke="#121316" stroke-width="3"/>
+    <rect x="0" y="30" width="480" height="12" fill="#C7AEE8"/>
+    <line x1="0" y1="42" x2="480" y2="42" stroke="#121316" stroke-width="3"/>
+    
+    <!-- Window Buttons -->
+    <circle cx="22" cy="21" r="5" fill="#FF5F56" stroke="#121316" stroke-width="1.5"/>
+    <circle cx="38" cy="21" r="5" fill="#FFBD2E" stroke="#121316" stroke-width="1.5"/>
+    <circle cx="54" cy="21" r="5" fill="#27C93F" stroke="#121316" stroke-width="1.5"/>
+    <text x="240" y="26" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="13" text-anchor="middle" fill="#121316">AI QUESTION-SOLVER ENGINE</text>
+
+    <!-- Code & AI Terminal -->
+    <rect x="25" y="60" width="430" height="185" rx="8" fill="#121316" stroke="#121316" stroke-width="2"/>
+    <text x="45" y="92" font-family="'Space Mono', monospace" font-size="12" fill="#C3FF16">&gt; input_query = "Calculate optimal heuristic..."</text>
+    <text x="45" y="118" font-family="'Space Mono', monospace" font-size="12" fill="#FFE816">&gt; running_model: python-ai-pipeline [v2.4]</text>
+    <text x="45" y="144" font-family="'Space Mono', monospace" font-size="12" fill="#70B8FF">&gt; parsing syntax tree... [OK]</text>
+    <text x="45" y="170" font-family="'Space Mono', monospace" font-size="12" fill="#97F8B7">&gt; Result: Solution Verified (Confidence: 99.4%)</text>
+    
+    <!-- Floating Badge -->
+    <g transform="translate(250, 180)">
+      <rect x="4" y="4" width="180" height="38" rx="6" fill="#000"/>
+      <rect x="0" y="0" width="180" height="38" rx="6" fill="#FFE816" stroke="#121316" stroke-width="2"/>
+      <text x="90" y="24" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" text-anchor="middle">🧠 PYTHON + NLP</text>
+    </g>
+  </g>
+</svg>

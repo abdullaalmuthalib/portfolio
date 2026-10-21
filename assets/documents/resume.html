@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume — Abdulla Al Muthalib</title>
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 24px;
+      color: #121316;
+      line-height: 1.6;
+      background: #FAF9F5;
+    }
+    .header {
+      border-bottom: 2px solid #121316;
+      padding-bottom: 20px;
+      margin-bottom: 24px;
+    }
+    h1 { margin: 0 0 6px 0; font-size: 2.2rem; }
+    .contact-line { font-size: 0.95rem; color: #4B5563; font-weight: 500; }
+    h2 { margin-top: 24px; margin-bottom: 12px; font-size: 1.3rem; border-bottom: 1px solid #D1D5DB; padding-bottom: 4px; }
+    .section-item { margin-bottom: 16px; }
+    .item-title { font-weight: 700; font-size: 1.05rem; display: flex; justify-content: space-between; }
+    .item-sub { color: #4B5563; font-size: 0.9rem; margin-bottom: 6px; }
+    .badge { display: inline-block; background: #FFE816; border: 1.5px solid #121316; padding: 2px 8px; border-radius: 4px; font-size: 0.8rem; font-weight: 700; margin: 2px; }
+    .print-btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 8px 16px;
+      background: #C3FF16;
+      border: 2px solid #121316;
+      border-radius: 6px;
+      box-shadow: 3px 3px 0px #121316;
+      font-weight: 700;
+      cursor: pointer;
+      text-decoration: none;
+      color: #121316;
+    }
+    @media print {
+      .print-btn { display: none; }
+      body { background: white; margin: 0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Abdulla Al Muthalib</h1>
+    <div class="contact-line">
+      Software Engineer / Full Stack Developer &bull; AI & Cybersecurity Researcher<br>
+      Email: abdullaalmuthalib@gmail.com &bull; GitHub: github.com/abdullaalmuthalib
+    </div>
+    <button class="print-btn" onclick="window.print()">🖨️ Print / Save as PDF</button>
+  </div>
+
+  <h2>Summary</h2>
+  <p>Passionate Software Engineer and Computer Science researcher focused on high-performance backends, artificial intelligence automation, cybersecurity architectures, and relational database systems using Python, PostgreSQL, and modern web frameworks.</p>
+
+  <h2>Core Technical Skills</h2>
+  <p>
+    <span class="badge">Python</span>
+    <span class="badge">Artificial Intelligence</span>
+    <span class="badge">Cyber Security</span>
+    <span class="badge">PostgreSQL</span>
+    <span class="badge">TypeScript</span>
+    <span class="badge">REST APIs</span>
+    <span class="badge">Pyrogram &amp; MTProto</span>
+    <span class="badge">Full Stack Development</span>
+  </p>
+
+  <h2>Featured Projects</h2>
+  <div class="section-item">
+    <div class="item-title">Farmer Booking Slot Application <span>TypeScript, Full Stack</span></div>
+    <div class="item-sub">Web platform for agricultural slot reservations and synchronized scheduling.</div>
+  </div>
+  <div class="section-item">
+    <div class="item-title">AI Question-Solver <span>Python, Artificial Intelligence</span></div>
+    <div class="item-sub">Intelligent automation pipeline for parsing and solving complex computational questions.</div>
+  </div>
+  <div class="section-item">
+    <div class="item-title">Alita_Robot Security &amp; Group Guardian <span>Python, Pyrogram, Cyber Security</span></div>
+    <div class="item-sub">Asynchronous MTProto bot for Telegram communities with spam defense and security controls.</div>
+  </div>
+  <div class="section-item">
+    <div class="item-title">PostgreSQL Auto-Filter Engine <span>Python, PostgreSQL</span></div>
+    <div class="item-sub">High-efficiency search and automated database query indexing system.</div>
+  </div>
+
+  <h2>Education &amp; Background</h2>
+  <div class="section-item">
+    <div class="item-title">Bachelor of Science in Computer Science</div>
+    <div class="item-sub">Focus on AI Systems, Cryptography, and Software Engineering.</div>
+  </div>
+</body>
+</html>

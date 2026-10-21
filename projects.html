@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects &amp; Open Source — Abdulla Al Muthalib</title>
+  <meta name="description" content="Explore open source repositories, AI systems, and full-stack applications created by Abdulla Al Muthalib.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23FFE816'/><text y='70' x='20' font-size='60' font-family='sans-serif' font-weight='bold'>A</text></svg>">
+</head>
+<body>
+  <!-- Accessible Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Global Navigation Header -->
+  <header class="site-header" role="banner">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" id="header-brand-logo" aria-label="Abdulla Al Muthalib Portfolio Home">
+        <span class="brand-badge">A</span>
+        <div class="brand-text">
+          <span class="brand-name">Abdulla Al Muthalib</span>
+          <span class="brand-role">Software Engineer</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav role="navigation" aria-label="Main Navigation">
+        <ul class="desktop-nav">
+          <li><a href="index.html" class="nav-link" id="nav-home">Home</a></li>
+          <li><a href="about.html" class="nav-link" id="nav-about">About</a></li>
+          <li><a href="skills.html" class="nav-link" id="nav-skills">Skills</a></li>
+          <li><a href="projects.html" class="nav-link active" id="nav-projects">Projects</a></li>
+          <li><a href="contact.html" class="nav-link" id="nav-contact">Contact</a></li>
+          <li><a href="contact.html" class="nav-cta" id="nav-hire-cta">Say Hello ⚡</a></li>
+        </ul>
+      </nav>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-drawer">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-nav-drawer" id="mobile-drawer" role="navigation" aria-label="Mobile Navigation">
+      <a href="index.html" class="nav-link" id="mobile-nav-home">🏠 Home</a>
+      <a href="about.html" class="nav-link" id="mobile-nav-about">👨‍💻 About Me</a>
+      <a href="skills.html" class="nav-link" id="mobile-nav-skills">⚡ Skills &amp; Tech Stack</a>
+      <a href="projects.html" class="nav-link active" id="mobile-nav-projects">🚀 Featured Projects</a>
+      <a href="contact.html" class="nav-link" id="mobile-nav-contact">✉️ Contact</a>
+      <a href="contact.html" class="btn btn-lime nav-cta" id="mobile-hire-cta">Say Hello ⚡</a>
+    </div>
+  </header>
+
+  <!-- Main Content Area -->
+  <main id="main-content" role="main">
+
+    <!-- Page Hero Banner -->
+    <section class="page-hero">
+      <div class="container page-hero-header">
+        <span class="sticker sticker-purple">SHOWCASE &amp; REPOSITORIES</span>
+        <h1 class="page-title">Featured Projects &amp; Code</h1>
+        <p class="page-description">
+          A collection of real-world full-stack web applications, AI problem solvers, cybersecurity bots, and database systems built for speed and reliability.
+        </p>
+      </div>
+    </section>
+
+    <!-- Projects List & Interactive Filters -->
+    <section class="section">
+      <div class="container">
+
+        <!-- Interactive Category Filter Buttons -->
+        <div class="project-filter-row" role="tablist" aria-label="Project Category Filter">
+          <button class="filter-btn active" data-filter="all" id="filter-all">All Repositories (6)</button>
+          <button class="filter-btn" data-filter="fullstack" id="filter-fullstack">Full Stack &amp; Web</button>
+          <button class="filter-btn" data-filter="ai" id="filter-ai">AI &amp; Algorithms</button>
+          <button class="filter-btn" data-filter="security" id="filter-security">Cyber Security</button>
+          <button class="filter-btn" data-filter="database" id="filter-database">PostgreSQL &amp; Data</button>
+        </div>
+
+        <!-- Project Cards Grid -->
+        <div class="projects-grid" id="projects-grid">
+
+          <!-- 1. Farmer Booking Slot -->
+          <article class="project-card" data-category="fullstack">
+            <div class="project-thumbnail">
+              <img src="assets/images/farmer-booking.svg" alt="Farmer Booking Slot System Preview" class="project-svg-art" loading="lazy">
+            </div>
+            <div class="project-body">
+              <div class="project-tag-row">
+                <span class="project-tag">TypeScript</span>
+                <span class="project-tag">Full Stack</span>
+                <span class="project-tag">Web Application</span>
+              </div>
+              <h2 class="project-title">
+                farmer-booking-slot
+                <span class="sticker sticker-mint" style="font-size: 0.68rem;">Live Repo</span>
+              </h2>
+              <p class="project-desc">
+                An end-to-end slot reservation and scheduling platform built to empower agricultural communities. Enables farmers to seamlessly book equipment, tractors, and operational time slots without overlapping conflicts or double-booking.
+              </p>
+              <div style="margin-bottom: 18px; font-size: 0.88rem; color: var(--text-muted);">
+                <strong>Key Highlights:</strong> Real-time calendar availability, intuitive responsive UI, structured slot reservations, and resilient schema handling.
+              </div>
+              <div class="project-footer">
+                <a href="https://github.com/abdullaalmuthalib/farmer-booking-slot" target="_blank" rel="noopener noreferrer" class="project-link">
+                  View on GitHub ↗
+                </a>
+                <span class="mono-tag" style="font-size: 0.72rem; color: var(--text-muted);">TypeScript</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 2. Question-solver -->
+          <article class="project-card" data-category="ai">
+            <div class="project-thumbnail">
+              <img src="assets/images/question-solver.svg" alt="Question Solver Preview" class="project-svg-art" loading="lazy">
+            </div>
+            <div class="project-body">
+              <div class="project-tag-row">
+                <span class="project-tag">Python</span>
+                <span class="project-tag">Artificial Intelligence</span>
+                <span class="project-tag">NLP</span>
+              </div>
+              <h2 class="project-title">
+                Question-solver
+                <span class="sticker sticker-yellow" style="font-size: 0.68rem;">AI Engine</span>
+              </h2>
+              <p class="project-desc">
+                An intelligent query-parsing and problem-solving automation tool developed in Python. Takes natural language computational queries, parses lexical semantics, and executes heuristic problem-solving algorithms to yield verified solutions.
+              </p>
+              <div style="margin-bottom: 18px; font-size: 0.88rem; color: var(--text-muted);">
+                <strong>Key Highlights:</strong> Syntax tree tokenization, heuristic logic branches, high accuracy validation, and automated output formatting.
+              </div>
+              <div class="project-footer">
+                <a href="https://github.com/abdullaalmuthalib/Question-solver" target="_blank" rel="noopener noreferrer" class="project-link">
+                  View on GitHub ↗
+                </a>
+                <span class="mono-tag" style="font-size: 0.72rem; color: var(--text-muted);">Python &bull; AI</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 3. Alita_Robot -->
+          <article class="project-card" data-category="security">
+            <div class="project-thumbnail">
+              <img src="assets/images/alita-robot.svg" alt="Alita Robot Security Bot Preview" class="project-svg-art" loading="lazy">
+            </div>
+            <div class="project-body">
+              <div class="project-tag-row">
+                <span class="project-tag">Python</span>
+                <span class="project-tag">Pyrogram</span>
+                <span class="project-tag">Cyber Security</span>
+              </div>
+              <h2 class="project-title">
+                Alita_Robot
+                <span class="sticker sticker-peach" style="font-size: 0.68rem;">CyberSec</span>
+              </h2>
+              <p class="project-desc">
+                Modern Telegram group management and defensive security robot powered by Pyrogram and MTProto. Architected for speed and safety, it guards massive online communities against raids, malicious flood attacks, and unauthorized bots.
+              </p>
+              <div style="margin-bottom: 18px; font-size: 0.88rem; color: var(--text-muted);">
+                <strong>Key Highlights:</strong> Anti-flood rate limiting, CAPTCHA verification, permission control, custom filter triggers, and async event handling.
+              </div>
+              <div class="project-footer">
+                <a href="https://github.com/abdullaalmuthalib/Alita_Robot" target="_blank" rel="noopener noreferrer" class="project-link">
+                  View on GitHub ↗
+                </a>
+                <span class="mono-tag" style="font-size: 0.72rem; color: var(--text-muted);">Python &bull; Pyrogram</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 4. Auto-Filter-Bot-V2 & PostgreSQL -->
+          <article class="project-card" data-category="database">
+            <div class="project-thumbnail">
+              <img src="assets/images/auto-filter.svg" alt="Auto Filter PostgreSQL Bot Preview" class="project-svg-art" loading="lazy">
+            </div>
+            <div class="project-body">
+              <div class="project-tag-row">
+                <span class="project-tag">Python</span>
+                <span class="project-tag">PostgreSQL</span>
+                <span class="project-tag">Data Engine</span>
+              </div>
+              <h2 class="project-title">
+                Auto-Filter-Bot-V2
+                <span class="sticker sticker-blue" style="font-size: 0.68rem;">Database</span>
+              </h2>
+              <p class="project-desc">
+                High-volume automated filtering and indexed search system backed by relational database architecture. Enables instant retrieval and automated indexing across large collections of community files and multimedia documents.
+              </p>
+              <div style="margin-bottom: 18px; font-size: 0.88rem; color: var(--text-muted);">
+                <strong>Key Highlights:</strong> Sub-second query lookups, full-text token search, automated data deduplication, and resilient transaction logs.
+              </div>
+              <div class="project-footer">
+                <a href="https://github.com/abdullaalmuthalib/Auto-Filter-Bot-V2" target="_blank" rel="noopener noreferrer" class="project-link">
+                  View on GitHub ↗
+                </a>
+                <span class="mono-tag" style="font-size: 0.72rem; color: var(--text-muted);">PostgreSQL &bull; SQL</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 5. Inline-Filter-Bot -->
+          <article class="project-card" data-category="database">
+            <div class="project-thumbnail" style="background-color: var(--accent-peach);">
+              <div style="text-align: center; padding: 20px;">
+                <div style="font-size: 3rem; margin-bottom: 8px;">🔍</div>
+                <div style="font-family: var(--font-display); font-weight: 800; font-size: 1.2rem;">INLINE FILTER ENGINE</div>
+                <div style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-muted);">Real-time Search Dispatcher</div>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-tag-row">
+                <span class="project-tag">Python</span>
+                <span class="project-tag">AsyncIO</span>
+                <span class="project-tag">Inline API</span>
+              </div>
+              <h2 class="project-title">
+                Inline-Filter-Bot
+                <span class="sticker sticker-lime" style="font-size: 0.68rem;">Search</span>
+              </h2>
+              <p class="project-desc">
+                Specialized inline query filter engine allowing users to invoke rapid search results directly from within any chat input field without opening external dialogues.
+              </p>
+              <div style="margin-bottom: 18px; font-size: 0.88rem; color: var(--text-muted);">
+                <strong>Key Highlights:</strong> Instantaneous search debounce, pagination for large result sets, and low-latency API communication.
+              </div>
+              <div class="project-footer">
+                <a href="https://github.com/abdullaalmuthalib/Inline-Filter-Bot" target="_blank" rel="noopener noreferrer" class="project-link">
+                  View on GitHub ↗
+                </a>
+                <span class="mono-tag" style="font-size: 0.72rem; color: var(--text-muted);">Python &bull; MTProto</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 6. Pyrogram Core Contributions -->
+          <article class="project-card" data-category="security">
+            <div class="project-thumbnail" style="background-color: var(--accent-purple-light);">
+              <div style="text-align: center; padding: 20px;">
+                <div style="font-size: 3rem; margin-bottom: 8px;">⚙️</div>
+                <div style="font-family: var(--font-display); font-weight: 800; font-size: 1.2rem;">PYROGRAM FORK &amp; TOOLS</div>
+                <div style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-muted);">MTProto Protocol Framework</div>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-tag-row">
+                <span class="project-tag">Python</span>
+                <span class="project-tag">MTProto</span>
+                <span class="project-tag">Network Protocol</span>
+              </div>
+              <h2 class="project-title">
+                pyrogram
+                <span class="sticker sticker-purple" style="font-size: 0.68rem;">Protocol</span>
+              </h2>
+              <p class="project-desc">
+                Exploration, enhancements, and custom handlers for the pure Python MTProto client framework, optimizing async connection pools and automated session re-authentication.
+              </p>
+              <div style="margin-bottom: 18px; font-size: 0.88rem; color: var(--text-muted);">
+                <strong>Key Highlights:</strong> Cryptographic handshake analysis, non-blocking network socket polling, and high-volume message pipelines.
+              </div>
+              <div class="project-footer">
+                <a href="https://github.com/abdullaalmuthalib/pyrogram" target="_blank" rel="noopener noreferrer" class="project-link">
+                  View on GitHub ↗
+                </a>
+                <span class="mono-tag" style="font-size: 0.72rem; color: var(--text-muted);">Python &bull; Core</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- GitHub Profile Banner -->
+        <div class="card" style="margin-top: 50px; background-color: var(--bg-card); border: var(--border-dark); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 20px;">
+          <div>
+            <h3 style="font-size: 1.35rem; margin-bottom: 6px;">Want to see all active branches &amp; commit logs?</h3>
+            <p style="font-size: 0.95rem; margin: 0; color: var(--text-muted);">Follow along on GitHub for experimental branches, upcoming repositories, and research code.</p>
+          </div>
+          <a href="https://github.com/abdullaalmuthalib" target="_blank" rel="noopener noreferrer" class="btn btn-dark" id="github-profile-cta">
+            Visit GitHub @abdullaalmuthalib ↗
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: Bio -->
+        <div class="footer-brand">
+          <h3>Abdulla Al Muthalib</h3>
+          <p>Software Engineer &amp; Tech Researcher building with Python, Artificial Intelligence, Cyber Security, and PostgreSQL.</p>
+          <div style="margin-top: 18px;">
+            <span class="footer-badge-tag">📍 Available Globally</span>
+          </div>
+        </div>
+
+        <!-- Col 2: Navigation Links -->
+        <div class="footer-col">
+          <h4>Pages</h4>
+          <ul class="footer-nav-list">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="about.html" class="footer-link">About Me</a></li>
+            <li><a href="skills.html" class="footer-link">Technical Skills</a></li>
+            <li><a href="projects.html" class="footer-link">Projects &amp; Repos</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Repositories -->
+        <div class="footer-col">
+          <h4>Featured Repos</h4>
+          <ul class="footer-nav-list">
+            <li><a href="https://github.com/abdullaalmuthalib/farmer-booking-slot" target="_blank" rel="noopener" class="footer-link">farmer-booking-slot ↗</a></li>
+            <li><a href="https://github.com/abdullaalmuthalib/Question-solver" target="_blank" rel="noopener" class="footer-link">Question-solver ↗</a></li>
+            <li><a href="https://github.com/abdullaalmuthalib/Alita_Robot" target="_blank" rel="noopener" class="footer-link">Alita_Robot ↗</a></li>
+            <li><a href="https://github.com/abdullaalmuthalib/Auto-Filter-Bot-V2" target="_blank" rel="noopener" class="footer-link">Auto-Filter-Bot-V2 ↗</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact Links -->
+        <div class="footer-col">
+          <h4>Get In Touch</h4>
+          <ul class="footer-nav-list">
+            <li><a href="mailto:abdullaalmuthalib@gmail.com" class="footer-link">abdullaalmuthalib@gmail.com</a></li>
+            <li><a href="https://github.com/abdullaalmuthalib" target="_blank" rel="noopener" class="footer-link">GitHub @abdullaalmuthalib ↗</a></li>
+            <li><a href="assets/documents/resume.html" target="_blank" rel="noopener" class="footer-link">Printable Resume ↗</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year">2026</span> Abdulla Al Muthalib. Built with clean HTML, CSS &amp; JS. Inspired by TinkerHub.</p>
+        <p>Crafted for speed, accessibility, and high performance.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

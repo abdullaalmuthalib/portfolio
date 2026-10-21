@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%">
+  <rect width="600" height="360" fill="#E6FCF5"/>
+  <!-- Grid dots -->
+  <defs>
+    <pattern id="grid-farmer" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.5" fill="#121316" opacity="0.15"/>
+    </pattern>
+  </defs>
+  <rect width="600" height="360" fill="url(#grid-farmer)"/>
+  
+  <!-- Main Window -->
+  <g transform="translate(60, 40)">
+    <!-- Shadow -->
+    <rect x="8" y="8" width="480" height="270" rx="12" fill="#121316"/>
+    <!-- Window Body -->
+    <rect x="0" y="0" width="480" height="270" rx="12" fill="#FFFFFF" stroke="#121316" stroke-width="3"/>
+    
+    <!-- Titlebar -->
+    <rect x="0" y="0" width="480" height="42" rx="12" fill="#97F8B7" stroke="#121316" stroke-width="3"/>
+    <rect x="0" y="30" width="480" height="12" fill="#97F8B7"/>
+    <line x1="0" y1="42" x2="480" y2="42" stroke="#121316" stroke-width="3"/>
+    
+    <!-- Window Buttons -->
+    <circle cx="22" cy="21" r="5" fill="#FF5F56" stroke="#121316" stroke-width="1.5"/>
+    <circle cx="38" cy="21" r="5" fill="#FFBD2E" stroke="#121316" stroke-width="1.5"/>
+    <circle cx="54" cy="21" r="5" fill="#27C93F" stroke="#121316" stroke-width="1.5"/>
+    <text x="240" y="26" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="13" text-anchor="middle" fill="#121316">FARMER BOOKING SYSTEM</text>
+
+    <!-- Calendar Slot UI Representation -->
+    <rect x="25" y="60" width="130" height="185" rx="8" fill="#FAF9F5" stroke="#121316" stroke-width="2"/>
+    <text x="38" y="82" font-family="'Space Mono', monospace" font-size="11" font-weight="700" fill="#121316">CALENDAR</text>
+    <rect x="38" y="94" width="104" height="24" rx="4" fill="#FFE816" stroke="#121316" stroke-width="1.5"/>
+    <text x="45" y="110" font-family="'Space Grotesk', sans-serif" font-size="10" font-weight="700">Slot 01: 09:00 AM</text>
+    <rect x="38" y="126" width="104" height="24" rx="4" fill="#C3FF16" stroke="#121316" stroke-width="1.5"/>
+    <text x="45" y="142" font-family="'Space Grotesk', sans-serif" font-size="10" font-weight="700">Slot 02: 11:30 AM</text>
+    <rect x="38" y="158" width="104" height="24" rx="4" fill="#FFFFFF" stroke="#121316" stroke-width="1.5"/>
+    <text x="45" y="174" font-family="'Space Grotesk', sans-serif" font-size="10" font-weight="700">Slot 03: 02:00 PM</text>
+
+    <!-- Right Side Dashboard -->
+    <rect x="175" y="60" width="280" height="90" rx="8" fill="#FAF9F5" stroke="#121316" stroke-width="2"/>
+    <text x="190" y="84" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700">🌾 AGRI-BOOKING ENGINE</text>
+    <text x="190" y="104" font-family="'Space Grotesk', sans-serif" font-size="11" fill="#4B5563">Real-time scheduling for farmer services</text>
+    <rect x="190" y="116" width="75" height="20" rx="4" fill="#C7AEE8" stroke="#121316" stroke-width="1.2"/>
+    <text x="198" y="130" font-family="'Space Mono', monospace" font-size="9" font-weight="700">TypeScript</text>
+    <rect x="272" y="116" width="60" height="20" rx="4" fill="#FFE816" stroke="#121316" stroke-width="1.2"/>
+    <text x="280" y="130" font-family="'Space Mono', monospace" font-size="9" font-weight="700">React</text>
+
+    <!-- Status pill -->
+    <rect x="175" y="165" width="280" height="80" rx="8" fill="#F2E8FE" stroke="#121316" stroke-width="2"/>
+    <text x="192" y="195" font-family="'Space Mono', monospace" font-size="13" font-weight="700" fill="#121316">STATUS: ACTIVE &amp; BOOKED</text>
+    <text x="192" y="222" font-family="'Space Grotesk', sans-serif" font-size="11" fill="#4B5563">Confirmed instant slot synchronization</text>
+  </g>
+</svg>
